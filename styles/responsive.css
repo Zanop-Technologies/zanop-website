@@ -1,0 +1,15 @@
+/* =====================================================================
+   RESPONSIVE + ACCESSIBILITY
+   ===================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  h1, h2, h3, .wobbly-text, .marquee span, .blink {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .page { margin: 0; border-width: 0; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 22px; }
+}

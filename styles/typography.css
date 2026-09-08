@@ -1,0 +1,63 @@
+/* =====================================================================
+   TYPOGRAPHY — headings (Zanop Wobblydoodle), rainbow rule, links
+   ===================================================================== */
+
+h1, h2, h3, .wobbly-text {
+  font-family: 'Zanop Wobblydoodle', 'Comic Sans MS', cursive;
+  margin: 18px 0 10px;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #FFD700,
+    3px 3px 0 #FF69B4,
+    4px 4px 0 #00CED1;
+  display: inline-block;
+  animation: wobble 3.2s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 42px;
+  background: linear-gradient(90deg, #FF0000, #FF9900, #FFEE00, #33CC33, #3399FF, #CC33FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.25));
+}
+
+h2 { font-size: 28px; color: #CC0099; }
+h3 { font-size: 20px; color: #006699; animation-duration: 2.6s; }
+
+@keyframes wobble {
+  0%   { transform: rotate(-1.5deg); }
+  25%  { transform: rotate(1deg); }
+  50%  { transform: rotate(-0.5deg); }
+  75%  { transform: rotate(1.5deg); }
+  100% { transform: rotate(-1.5deg); }
+}
+
+/* stagger the wobble on repeated headings so they don't move in sync */
+h2:nth-of-type(2n) { animation-delay: 0.6s; }
+h2:nth-of-type(3n) { animation-delay: 1.1s; }
+h3:nth-of-type(2n) { animation-delay: 0.4s; }
+
+.rainbow-rule {
+  height: 5px;
+  border: none;
+  margin: 18px 0;
+  background: repeating-linear-gradient(
+    90deg,
+    #FF0000 0 10px,
+    #FF9900 10px 20px,
+    #FFEE00 20px 30px,
+    #33CC33 30px 40px,
+    #3399FF 40px 50px,
+    #CC33FF 50px 60px
+  );
+}
+
+p { margin: 0 0 12px; }
+
+a:link    { color: #0000EE !important; text-decoration: underline; }
+a:visited { color: #551A8B !important; text-decoration: underline; }
+a:active  { color: #FF0000 !important; text-decoration: underline; }
+a:hover   { background: #FFFF00; }

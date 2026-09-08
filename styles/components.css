@@ -1,0 +1,104 @@
+/* =====================================================================
+   COMPONENTS — buttons, tables, construction banner, hit counter, panel
+   ===================================================================== */
+
+.btn-98 {
+  display: inline-block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  background: #C0C0C0;
+  border: 2px outset #FFFFFF;
+  padding: 6px 14px;
+  color: #000000;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.btn-98:active {
+  border: 2px inset #FFFFFF;
+}
+
+table.classic {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 14px 0;
+  border: 3px double #000080;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+}
+
+table.classic th {
+  background: #000080;
+  color: #FFFFFF;
+  padding: 6px 10px;
+  border: 1px solid #000080;
+}
+
+table.classic td {
+  padding: 6px 10px;
+  border: 1px solid #999999;
+}
+
+table.classic tr:nth-child(even) td {
+  background: #E6E6FA;
+}
+
+.construction {
+  background: repeating-linear-gradient(
+    45deg,
+    #FFEE00,
+    #FFEE00 12px,
+    #000000 12px,
+    #000000 24px
+  );
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px #000000;
+  border: 3px solid #000000;
+  margin: 16px 0;
+}
+
+.hit-counter {
+  display: inline-flex;
+  gap: 2px;
+  background: #000000;
+  padding: 6px 8px;
+  border: 2px inset #C0C0C0;
+}
+
+.hit-counter span {
+  background: #001a00;
+  color: #33FF33;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.panel {
+  background: #F5F5DC;
+  border: 3px inset #C0C0C0;
+  padding: 12px;
+  margin: 16px 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+}
+
+.panel h3 { margin-top: 0; }
+
+.footer-strip {
+  background: #000000;
+  color: #C0C0C0;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 11px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.footer-strip a { color: #33CCFF !important; }

@@ -1,0 +1,37 @@
+/* =====================================================================
+   MOTION — marquee and blink (CSS replacements for deprecated tags)
+   ===================================================================== */
+
+/* Markup: <div class="marquee"><span>your scrolling text here</span></div> */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000000;
+  color: #00FF00;
+  font-family: 'Courier New', monospace;
+  font-size: 15px;
+  padding: 6px 0;
+  border: 2px inset #C0C0C0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* Markup: <span class="blink">NEW!</span> */
+.blink {
+  animation: blink-anim 1s steps(1) infinite;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+@keyframes blink-anim {
+  50% { opacity: 0; }
+}
