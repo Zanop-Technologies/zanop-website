@@ -1,0 +1,32 @@
+/* =====================================================================
+   HEADER — site title block, tagline, and classic pipe-separated nav
+   ===================================================================== */
+
+.site-header {
+  text-align: center;
+  border-bottom: 3px double #000080;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.site-header h1 { margin-bottom: 4px; }
+
+.tagline {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #444444;
+  margin: 0 0 10px;
+}
+
+.site-nav {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: #E6E6FA;
+  border: 2px inset #C0C0C0;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+.site-nav a { margin: 0 4px; }

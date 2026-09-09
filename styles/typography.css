@@ -55,7 +55,7 @@ h3:nth-of-type(2n) { animation-delay: 0.4s; }
   );
 }
 
-p { margin: 0 0 12px; }
+p { margin: 0 0 12px; font-family: 'Zanop Wobblydoodle', 'Comic Sans MS', cursive; }
 
 a:link    { color: #0000EE !important; text-decoration: underline; }
 a:visited { color: #551A8B !important; text-decoration: underline; }
